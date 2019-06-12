@@ -1,0 +1,27 @@
+megs:32
+
+
+romimage:file=$BXSHARE/BIOS-bochs-latest
+
+
+vgaromimage:file=$BXSHARE/VGABIOS-lgpl-latest
+
+
+#floppya:1_44=lindorx.img,status=inserted
+
+
+#boot:floppy
+
+ata0-master: type=disk, path="lindorx.img", cylinders=615, heads=6, spt=17
+boot: disk
+
+
+log:bochsout.txt
+
+
+mouse:enabled=0
+
+
+keyboard: keymap=$BXSHARE/keymaps/x11-pc-de.map
+
+
